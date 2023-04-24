@@ -2,6 +2,7 @@ import uuid
 
 
 def test_uuid():
-    id_str = uuid.uuid4().hex
-    id_str = 'autotest' + id_str[24:]
-    print(id_str)
+    id_str = uuid.uuid4()
+    id_str1 = str(uuid.uuid4())
+    id_str1 = 'autotest' + id_str1[8:]
+    print(id_str1)
